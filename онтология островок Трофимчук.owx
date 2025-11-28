@@ -1,0 +1,1134 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/островок/онтология"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/островок/онтология">
+    <Prefix name="" IRI="http://www.semanticweb.org/островок/онтология#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Онтология сервиса бронирования жилья &quot;Островок&quot; - Глубокая аналитическая модель пользовательского поведения</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Островок Онтология</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Ввод"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Действие"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Интерфейс"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Клик"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Кнопка"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Пользователь"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Причина"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Просмотр"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Событие"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Шаг"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Экран"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#взаимодействуетС"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#вызывает"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетИнтерфейс"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетСостояние"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#материализуетсяВ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#предшествуетДействию"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#предшествуетШагу"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#являетсяПричинойДля"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#имяСобытия"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#кодоеИмя"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#название"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ПодтверждениеБронирования"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ВиджетКалендаря"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ПолеВводаКарты"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ПросмотрКалендаря"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ПросмотрЭкранаОплаты"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#КнопкаБронирования"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#КликФильтра"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Переезд"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ПроверкаДоступности"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ФильтрацияРезультатов"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ЭкранПоиска"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ВводНомераКарты"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Оплата"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#КликКнопкиПодтверждения"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#БизнесПользователь"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ПросмотрКарточки"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ПланированиеОтпуска"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ПроживаниеНаМероприятие"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#КнопкаПодтверждения"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ПросмотрДеталейОбъекта"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ПоискЖилья"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ФормаОплаты"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Командировка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#КликКнопкиБронирования"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Гость"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ПанельФильтров"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#БронированиеЖилья"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Арендодатель"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ПросмотрПоиска"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#КарточкаОбъекта"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Ввод"/>
+        <Class IRI="#Действие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Клик"/>
+        <Class IRI="#Действие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Кнопка"/>
+        <Class IRI="#Интерфейс"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Просмотр"/>
+        <Class IRI="#Действие"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Экран"/>
+        <Class IRI="#Интерфейс"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Пользователь"/>
+        <NamedIndividual IRI="#Арендодатель"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пользователь"/>
+        <NamedIndividual IRI="#БизнесПользователь"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шаг"/>
+        <NamedIndividual IRI="#БронированиеЖилья"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ввод"/>
+        <NamedIndividual IRI="#ВводНомераКарты"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Действие"/>
+        <NamedIndividual IRI="#ВводНомераКарты"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Экран"/>
+        <NamedIndividual IRI="#ВиджетКалендаря"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пользователь"/>
+        <NamedIndividual IRI="#Гость"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Экран"/>
+        <NamedIndividual IRI="#КарточкаОбъекта"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Действие"/>
+        <NamedIndividual IRI="#КликКнопкиБронирования"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Клик"/>
+        <NamedIndividual IRI="#КликКнопкиБронирования"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Действие"/>
+        <NamedIndividual IRI="#КликКнопкиПодтверждения"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Клик"/>
+        <NamedIndividual IRI="#КликКнопкиПодтверждения"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Действие"/>
+        <NamedIndividual IRI="#КликФильтра"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Клик"/>
+        <NamedIndividual IRI="#КликФильтра"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Кнопка"/>
+        <NamedIndividual IRI="#КнопкаБронирования"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Кнопка"/>
+        <NamedIndividual IRI="#КнопкаПодтверждения"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Причина"/>
+        <NamedIndividual IRI="#Командировка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шаг"/>
+        <NamedIndividual IRI="#Оплата"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Экран"/>
+        <NamedIndividual IRI="#ПанельФильтров"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Причина"/>
+        <NamedIndividual IRI="#Переезд"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Причина"/>
+        <NamedIndividual IRI="#ПланированиеОтпуска"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шаг"/>
+        <NamedIndividual IRI="#ПодтверждениеБронирования"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шаг"/>
+        <NamedIndividual IRI="#ПоискЖилья"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Кнопка"/>
+        <NamedIndividual IRI="#ПолеВводаКарты"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шаг"/>
+        <NamedIndividual IRI="#ПроверкаДоступности"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Причина"/>
+        <NamedIndividual IRI="#ПроживаниеНаМероприятие"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шаг"/>
+        <NamedIndividual IRI="#ПросмотрДеталейОбъекта"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Действие"/>
+        <NamedIndividual IRI="#ПросмотрКалендаря"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Просмотр"/>
+        <NamedIndividual IRI="#ПросмотрКалендаря"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Действие"/>
+        <NamedIndividual IRI="#ПросмотрКарточки"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Просмотр"/>
+        <NamedIndividual IRI="#ПросмотрКарточки"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Действие"/>
+        <NamedIndividual IRI="#ПросмотрПоиска"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Просмотр"/>
+        <NamedIndividual IRI="#ПросмотрПоиска"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Действие"/>
+        <NamedIndividual IRI="#ПросмотрЭкранаОплаты"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Просмотр"/>
+        <NamedIndividual IRI="#ПросмотрЭкранаОплаты"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Шаг"/>
+        <NamedIndividual IRI="#ФильтрацияРезультатов"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Экран"/>
+        <NamedIndividual IRI="#ФормаОплаты"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Экран"/>
+        <NamedIndividual IRI="#ЭкранПоиска"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетСостояние"/>
+        <NamedIndividual IRI="#Арендодатель"/>
+        <NamedIndividual IRI="#ПланированиеОтпуска"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетСостояние"/>
+        <NamedIndividual IRI="#БизнесПользователь"/>
+        <NamedIndividual IRI="#Командировка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализуетсяВ"/>
+        <NamedIndividual IRI="#БронированиеЖилья"/>
+        <NamedIndividual IRI="#КликКнопкиБронирования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшествуетШагу"/>
+        <NamedIndividual IRI="#БронированиеЖилья"/>
+        <NamedIndividual IRI="#Оплата"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#взаимодействуетС"/>
+        <NamedIndividual IRI="#ВводНомераКарты"/>
+        <NamedIndividual IRI="#ПолеВводаКарты"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшествуетДействию"/>
+        <NamedIndividual IRI="#ВводНомераКарты"/>
+        <NamedIndividual IRI="#КликКнопкиПодтверждения"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетСостояние"/>
+        <NamedIndividual IRI="#Гость"/>
+        <NamedIndividual IRI="#Командировка"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетСостояние"/>
+        <NamedIndividual IRI="#Гость"/>
+        <NamedIndividual IRI="#ПланированиеОтпуска"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#взаимодействуетС"/>
+        <NamedIndividual IRI="#КликКнопкиБронирования"/>
+        <NamedIndividual IRI="#КнопкаБронирования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшествуетДействию"/>
+        <NamedIndividual IRI="#КликКнопкиБронирования"/>
+        <NamedIndividual IRI="#ПросмотрЭкранаОплаты"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#взаимодействуетС"/>
+        <NamedIndividual IRI="#КликКнопкиПодтверждения"/>
+        <NamedIndividual IRI="#КнопкаПодтверждения"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#взаимодействуетС"/>
+        <NamedIndividual IRI="#КликФильтра"/>
+        <NamedIndividual IRI="#ПанельФильтров"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшествуетДействию"/>
+        <NamedIndividual IRI="#КликФильтра"/>
+        <NamedIndividual IRI="#ПросмотрКарточки"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#являетсяПричинойДля"/>
+        <NamedIndividual IRI="#Командировка"/>
+        <NamedIndividual IRI="#ПоискЖилья"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализуетсяВ"/>
+        <NamedIndividual IRI="#Оплата"/>
+        <NamedIndividual IRI="#ВводНомераКарты"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализуетсяВ"/>
+        <NamedIndividual IRI="#Оплата"/>
+        <NamedIndividual IRI="#ПросмотрЭкранаОплаты"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшествуетШагу"/>
+        <NamedIndividual IRI="#Оплата"/>
+        <NamedIndividual IRI="#ПодтверждениеБронирования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#являетсяПричинойДля"/>
+        <NamedIndividual IRI="#Переезд"/>
+        <NamedIndividual IRI="#ПоискЖилья"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#являетсяПричинойДля"/>
+        <NamedIndividual IRI="#ПланированиеОтпуска"/>
+        <NamedIndividual IRI="#ПоискЖилья"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализуетсяВ"/>
+        <NamedIndividual IRI="#ПодтверждениеБронирования"/>
+        <NamedIndividual IRI="#КликКнопкиПодтверждения"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализуетсяВ"/>
+        <NamedIndividual IRI="#ПоискЖилья"/>
+        <NamedIndividual IRI="#ПросмотрПоиска"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшествуетШагу"/>
+        <NamedIndividual IRI="#ПоискЖилья"/>
+        <NamedIndividual IRI="#ФильтрацияРезультатов"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализуетсяВ"/>
+        <NamedIndividual IRI="#ПроверкаДоступности"/>
+        <NamedIndividual IRI="#ПросмотрКалендаря"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшествуетШагу"/>
+        <NamedIndividual IRI="#ПроверкаДоступности"/>
+        <NamedIndividual IRI="#БронированиеЖилья"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#являетсяПричинойДля"/>
+        <NamedIndividual IRI="#ПроживаниеНаМероприятие"/>
+        <NamedIndividual IRI="#ПоискЖилья"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализуетсяВ"/>
+        <NamedIndividual IRI="#ПросмотрДеталейОбъекта"/>
+        <NamedIndividual IRI="#ПросмотрКарточки"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшествуетШагу"/>
+        <NamedIndividual IRI="#ПросмотрДеталейОбъекта"/>
+        <NamedIndividual IRI="#ПроверкаДоступности"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#взаимодействуетС"/>
+        <NamedIndividual IRI="#ПросмотрКалендаря"/>
+        <NamedIndividual IRI="#ВиджетКалендаря"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшествуетДействию"/>
+        <NamedIndividual IRI="#ПросмотрКалендаря"/>
+        <NamedIndividual IRI="#КликКнопкиБронирования"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#взаимодействуетС"/>
+        <NamedIndividual IRI="#ПросмотрКарточки"/>
+        <NamedIndividual IRI="#КарточкаОбъекта"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшествуетДействию"/>
+        <NamedIndividual IRI="#ПросмотрКарточки"/>
+        <NamedIndividual IRI="#ПросмотрКалендаря"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#взаимодействуетС"/>
+        <NamedIndividual IRI="#ПросмотрПоиска"/>
+        <NamedIndividual IRI="#ЭкранПоиска"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшествуетДействию"/>
+        <NamedIndividual IRI="#ПросмотрПоиска"/>
+        <NamedIndividual IRI="#КликФильтра"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#взаимодействуетС"/>
+        <NamedIndividual IRI="#ПросмотрЭкранаОплаты"/>
+        <NamedIndividual IRI="#ФормаОплаты"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшествуетДействию"/>
+        <NamedIndividual IRI="#ПросмотрЭкранаОплаты"/>
+        <NamedIndividual IRI="#ВводНомераКарты"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#материализуетсяВ"/>
+        <NamedIndividual IRI="#ФильтрацияРезультатов"/>
+        <NamedIndividual IRI="#КликФильтра"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#предшествуетШагу"/>
+        <NamedIndividual IRI="#ФильтрацияРезультатов"/>
+        <NamedIndividual IRI="#ПросмотрДеталейОбъекта"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#Арендодатель"/>
+        <Literal>Арендодатель</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#БизнесПользователь"/>
+        <Literal>БизнесПользователь</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#БронированиеЖилья"/>
+        <Literal>Бронирование жилья</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ВводНомераКарты"/>
+        <Literal>Ввод номера карты</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#кодоеИмя"/>
+        <NamedIndividual IRI="#ВиджетКалендаря"/>
+        <Literal>calendarWidget</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ВиджетКалендаря"/>
+        <Literal>Виджет календаря</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#Гость"/>
+        <Literal>Гость</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#кодоеИмя"/>
+        <NamedIndividual IRI="#КарточкаОбъекта"/>
+        <Literal>propertyCard</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#КарточкаОбъекта"/>
+        <Literal>Карточка объекта</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#КликКнопкиБронирования"/>
+        <Literal>Клик кнопки бронирования</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#КликКнопкиПодтверждения"/>
+        <Literal>Клик кнопки подтверждения</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#КликФильтра"/>
+        <Literal>Клик фильтра</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#кодоеИмя"/>
+        <NamedIndividual IRI="#КнопкаБронирования"/>
+        <Literal>bookBtn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#КнопкаБронирования"/>
+        <Literal>Кнопка бронирования</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#кодоеИмя"/>
+        <NamedIndividual IRI="#КнопкаПодтверждения"/>
+        <Literal>confirmBtn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#КнопкаПодтверждения"/>
+        <Literal>Кнопка подтверждения</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#Командировка"/>
+        <Literal>Командировка</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#Оплата"/>
+        <Literal>Оплата</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#кодоеИмя"/>
+        <NamedIndividual IRI="#ПанельФильтров"/>
+        <Literal>filterPanel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ПанельФильтров"/>
+        <Literal>Панель фильтров</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#Переезд"/>
+        <Literal>Переезд</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ПланированиеОтпуска"/>
+        <Literal>Планирование отпуска</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ПодтверждениеБронирования"/>
+        <Literal>Подтверждение бронирования</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ПоискЖилья"/>
+        <Literal>Поиск жилья</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#кодоеИмя"/>
+        <NamedIndividual IRI="#ПолеВводаКарты"/>
+        <Literal>cardInput</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ПолеВводаКарты"/>
+        <Literal>Поле ввода карты</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ПроверкаДоступности"/>
+        <Literal>Проверка доступности</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ПроживаниеНаМероприятие"/>
+        <Literal>Проживание на мероприятие</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ПросмотрДеталейОбъекта"/>
+        <Literal>Просмотр деталей объекта</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ПросмотрКалендаря"/>
+        <Literal>Просмотр календаря</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ПросмотрКарточки"/>
+        <Literal>Просмотр карточки</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ПросмотрПоиска"/>
+        <Literal>Просмотр поиска</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ПросмотрЭкранаОплаты"/>
+        <Literal>Просмотр экрана оплаты</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ФильтрацияРезультатов"/>
+        <Literal>Фильтрация результатов</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#кодоеИмя"/>
+        <NamedIndividual IRI="#ФормаОплаты"/>
+        <Literal>paymentForm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ФормаОплаты"/>
+        <Literal>Форма оплаты</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#кодоеИмя"/>
+        <NamedIndividual IRI="#ЭкранПоиска"/>
+        <Literal>searchScreen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#название"/>
+        <NamedIndividual IRI="#ЭкранПоиска"/>
+        <Literal>Экран поиска</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#взаимодействуетС"/>
+        <Class IRI="#Действие"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#вызывает"/>
+        <Class IRI="#Действие"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетИнтерфейс"/>
+        <Class IRI="#Событие"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетСостояние"/>
+        <Class IRI="#Пользователь"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#материализуетсяВ"/>
+        <Class IRI="#Шаг"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#предшествуетДействию"/>
+        <Class IRI="#Действие"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#предшествуетШагу"/>
+        <Class IRI="#Шаг"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#являетсяПричинойДля"/>
+        <Class IRI="#Причина"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#взаимодействуетС"/>
+        <Class IRI="#Интерфейс"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#вызывает"/>
+        <Class IRI="#Событие"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетИнтерфейс"/>
+        <Class IRI="#Интерфейс"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетСостояние"/>
+        <Class IRI="#Причина"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#материализуетсяВ"/>
+        <Class IRI="#Действие"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#предшествуетДействию"/>
+        <Class IRI="#Действие"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#предшествуетШагу"/>
+        <Class IRI="#Шаг"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#являетсяПричинойДля"/>
+        <Class IRI="#Шаг"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#имяСобытия"/>
+        <Class IRI="#Событие"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#кодоеИмя"/>
+        <Class IRI="#Интерфейс"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#название"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#имяСобытия"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#кодоеИмя"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#название"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Арендодатель</IRI>
+        <Literal>Арендодатель</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#БизнесПользователь</IRI>
+        <Literal>БизнесПользователь</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#БронированиеЖилья</IRI>
+        <Literal>БронированиеЖилья</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ввод</IRI>
+        <Literal>Действие ввода данных</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ввод</IRI>
+        <Literal>Ввод</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ВводНомераКарты</IRI>
+        <Literal>ВводНомераКарты</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ВиджетКалендаря</IRI>
+        <Literal>ВиджетКалендаря</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Гость</IRI>
+        <Literal>Гость</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Действие</IRI>
+        <Literal>Техническое действие пользователя или системы</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Действие</IRI>
+        <Literal>Действие</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Интерфейс</IRI>
+        <Literal>Элемент пользовательского интерфейса</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Интерфейс</IRI>
+        <Literal>Интерфейс</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#КарточкаОбъекта</IRI>
+        <Literal>КарточкаОбъекта</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Клик</IRI>
+        <Literal>Действие нажатия на интерфейсный элемент</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Клик</IRI>
+        <Literal>Клик</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#КликКнопкиБронирования</IRI>
+        <Literal>КликКнопкиБронирования</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#КликКнопкиПодтверждения</IRI>
+        <Literal>КликКнопкиПодтверждения</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#КликФильтра</IRI>
+        <Literal>КликФильтра</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Кнопка</IRI>
+        <Literal>Кнопка интерфейса</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Кнопка</IRI>
+        <Literal>Кнопка</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#КнопкаБронирования</IRI>
+        <Literal>КнопкаБронирования</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#КнопкаПодтверждения</IRI>
+        <Literal>КнопкаПодтверждения</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Командировка</IRI>
+        <Literal>Командировка</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Оплата</IRI>
+        <Literal>Оплата</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ПанельФильтров</IRI>
+        <Literal>ПанельФильтров</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Переезд</IRI>
+        <Literal>Переезд</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ПланированиеОтпуска</IRI>
+        <Literal>ПланированиеОтпуска</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ПодтверждениеБронирования</IRI>
+        <Literal>ПодтверждениеБронирования</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ПоискЖилья</IRI>
+        <Literal>ПоискЖилья</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ПолеВводаКарты</IRI>
+        <Literal>ПолеВводаКарты</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Пользователь</IRI>
+        <Literal>Сегмент пользователей сервиса бронирования жилья</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Пользователь</IRI>
+        <Literal>Пользователь</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Причина</IRI>
+        <Literal>Причина использования сервиса или состояние пользователя</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Причина</IRI>
+        <Literal>Причина</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ПроверкаДоступности</IRI>
+        <Literal>ПроверкаДоступности</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ПроживаниеНаМероприятие</IRI>
+        <Literal>ПроживаниеНаМероприятие</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Просмотр</IRI>
+        <Literal>Действие просмотра интерфейсного элемента</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Просмотр</IRI>
+        <Literal>Просмотр</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ПросмотрДеталейОбъекта</IRI>
+        <Literal>ПросмотрДеталейОбъекта</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ПросмотрКалендаря</IRI>
+        <Literal>ПросмотрКалендаря</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ПросмотрКарточки</IRI>
+        <Literal>ПросмотрКарточки</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ПросмотрПоиска</IRI>
+        <Literal>ПросмотрПоиска</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ПросмотрЭкранаОплаты</IRI>
+        <Literal>ПросмотрЭкранаОплаты</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Событие</IRI>
+        <Literal>Событие логгирования пользовательского действия</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Событие</IRI>
+        <Literal>Событие</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ФильтрацияРезультатов</IRI>
+        <Literal>ФильтрацияРезультатов</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ФормаОплаты</IRI>
+        <Literal>ФормаОплаты</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Шаг</IRI>
+        <Literal>Шаг сценария использования сервиса</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Шаг</IRI>
+        <Literal>Шаг</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Экран</IRI>
+        <Literal>Экран приложения</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Экран</IRI>
+        <Literal>Экран</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ЭкранПоиска</IRI>
+        <Literal>ЭкранПоиска</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#взаимодействуетС</IRI>
+        <Literal>взаимодействуетС</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#вызывает</IRI>
+        <Literal>вызывает</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#имеетИнтерфейс</IRI>
+        <Literal>имеетИнтерфейс</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#имеетСостояние</IRI>
+        <Literal>имеетСостояние</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#имяСобытия</IRI>
+        <Literal>имяСобытия</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#кодоеИмя</IRI>
+        <Literal>кодоеИмя</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#материализуетсяВ</IRI>
+        <Literal>материализуетсяВ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#название</IRI>
+        <Literal>название</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#предшествуетДействию</IRI>
+        <Literal>предшествуетДействию</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#предшествуетШагу</IRI>
+        <Literal>предшествуетШагу</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#являетсяПричинойДля</IRI>
+        <Literal>являетсяПричинойДля</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
